@@ -1,0 +1,91 @@
+.btn {
+  &-hero,
+  &-primary {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    border-radius: 10rem;
+    transition: all 0.3s ease;
+  }
+
+  &-hero {
+    border: 0.1rem solid #ffffff;
+    color: #ffffff;
+    padding: 1.4rem 4.4rem;
+    &:hover {
+      background-color: $yellow-brand;
+      color: $black-brand;
+      border: 0.1rem solid $yellow-brand;
+    }
+  }
+
+  &-primary {
+    background-color: $yellow-brand;
+    color: $black-brand;
+    padding: 1.1rem 5rem;
+    &:hover {
+      background-color: #006d8f;
+      color: #fff;
+    }
+  }
+
+  &-slide {
+    @include flex(row, center, center);
+    width: 100%;
+    max-width: 26.9rem;
+    margin: 0.8rem 1.1rem;
+    transition: all 0.3 ease;
+    font-weight: 500;
+    font-size: 1.6rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: $gray-brand;
+    transition: all 0.3s ease;
+    &.active {
+      background: $black-brand;
+      border-radius: 12rem;
+      font-size: 1.6rem;
+      color: #ffffff;
+      padding: 2rem 0.8rem;
+    }
+    &:hover {
+      background: $black-brand;
+      border-radius: 12rem;
+      font-size: 1.6rem;
+      color: #ffffff;
+      padding: 2rem 0.8rem;
+    }
+  }
+
+  @include responsive(568px) {
+    &-hero {
+      margin: 0 auto;
+    }
+    &-primary {
+      font-size: 1.5rem;
+      line-height: 1.2rem;
+      padding: 1.4rem;
+    }
+    &-slide {
+      font-size: 1.4rem;
+      &.active {
+        font-size: 1.4rem;
+        padding: 1.5rem 3.43rem;
+      }
+    }
+  }
+}
+
+.destaque-hero {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  background-color: #006d8f;
+  border-radius: 12rem;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  color: #ffffff;
+  padding: 0.5rem 1.09rem;
+}
